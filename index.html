@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<head>
+  <title>Responsive HTML Email</title>
+  <style>
+      body{
+          margin: 0;
+          padding: 0;
+          background-color: #f6f5fe;
+          -webkit-font-smoothing: antialiased;
+      }
+      table{
+          margin: 0;
+          padding: 0;
+          border-spacing: 0;
+      }
+      td{
+          padding: 0;
+          margin: 0;
+      }
+      img{
+          border: 0;
+      }
+      a{
+          padding: 0;
+          text-decoration: none;
+          color: #ffffff;
+      }
+      p{
+          margin: 0;
+      }
+      .btn{
+          display: inline-block;
+          padding: 8px 12px;
+          font-size: 12px;
+          font-weight: bold;
+          background-color: #4988cd;
+          color: #f2f1f8;
+          border-radius: 0;
+          border: 1px solid #f2f1f8;
+      }
+      .wrapper{
+          width: 100%;
+          background-color: #f6f5fe;
+          table-layout: fixed;
+          padding-bottom: 40px;
+      }
+      .main{
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          /* background-color: #4988cd; */
+          background-color: #073138;
+          color: #ffffff;
+          font-family: 'Raleway',sans-serif;
+      }
+
+      .two-columns{
+          text-align: center;
+          padding: 40px 0;
+          font-size: 0;
+      }
+      .two-columns .columns{
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          max-width:300px;
+      }
+      .two-columns .columns .padding{
+          padding: 10px;
+      }
+      .columns .content{
+          text-align: center;
+          margin: auto;
+      }
+
+      @media (max-width: 600px){
+
+        .two-columns .padding{
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+		.columns .content{
+			text-align: center !important;
+		}
+		.columns .content img{
+			width: 300px !important;
+			max-width: 300px !important;
+		}
+      }
+  </style>
+</head>
+<body>
+
+  <center class="wrapper">
+    <table class="main">
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td style="text-align: center;padding: 10px 20px;background-color: #f2f1f8;">
+                            <a href="#"><img src="https://lh3.googleusercontent.com/tqeiKrXLvWLNEb1r4pY0oZhNJwaX8DfHZaRaVAFlOlU2xLr2fggxkyIcW0qHEzXFK-snZmohl0C8Mp9bUdKxJP0_PA8MjsMq9z7QzStiiEfbd0Pchu73mhPXkF3SQrN9KqDgov9uPcAdlXxVtpkJcdlQjZF470dBYzoEli3x85Ral8BkIjUM6pjp7N7mk6m8NIMlc8k3hwx38Hbse3ibc0pSehjBs5zZVmukF3GHdRmoUURHc4csj29U-euAFP99i_lc9g52-6CfhI2_UfqL_adpgAkunbdvmeNM45qU-u8rRpBUw13Xen1Yd5YVR_SVz0GpLs0QEYecbQy1not2K3pGn_tMOnXoUhzNTjWhvCbSnGs6dWUWvRVPjKbEZFme0CZLjuFGJcJeZ1eRATogwRsHWB3BR-6maHFvhTFJF05FbY53A4V_1rjMZecsXPe_zlj95VkGf-4b3aTGa4OvHqXEHPM1O1njHWrM-jWbHRzi5UNBdFIcVxvr1azw7r6_21P1mXy2ZsHB-9FjioBj0bW2eS5eq6lICiRBMPFFzKxxHc1mI1ZARtyP1ScDLYDdelB0Hvt-jGSaaeUf96SsH7KR7Sgn0_jNlNt73HqxFqyYX3cjJGZi7daoqNgLTqHWyaTXi59EOGnWJ5hDopBuB16WLiTFDcitGi0Bf4z5FBqFualefx6vY9EEAOkYD10B0XCI8n_FIYNODCRk7wMsvbM=w300-h100-no?authuser=0" alt="Logo" width="170" height="70"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td style="background-color: 073138;padding: 10px;text-align: center;">
+                            <a href="#"><img src="https://lh3.googleusercontent.com/2tbPvkRam5EkzXaKR_ODwmbKHrFKnAi7hqcWzURDj3IdBzy4C-1Be6-i_JHaN00HkMB43HcZrghrcwM36aDPv02JaZn4jsYbreKUQKDdH-Ph6tkyPMLyVw-qIqm6gbtiBFLxlpuETsDDsX0HEQgepHLwRMYhj83L5v9Czp-N_TXUdNkbhqTijHjhDkOICel1FVfbBGu4e0FBN9yAcKz_MNloB-vnYY-2JtLiii6utMcPZ0WG08khDx8lyCKzwHrd7wmr2TGOsQQADdIBbuHoElJILmGzCXI5L0ZreEW3_YTrx8VWyt50AfO17Hn-RDwFyKNpb3Twdqc4Re2NOGVWqE-3c9bCeLHdFdSgRRmmUr-dapCMTusHqzf_faAx7_s8BKXKSkjD9k52gTaeAzd6d7Nqws9PDBwW-8h9bBkOCGhUf0sQ7bktWoBxek0If_HNQnNabp9hZLiEC4RCkJ6UxfMunlCVmbNnF0laAGzeu60MIZUWZ_z3NYo3TxXhJWW5bbye0mIpLTafy2L3LpKZtdcZml1JhZh4Yl-SonD9wnkm2AsS47Tx3sIIN_P0f8RMzAe-kqQy43kT3VV76Kwzd2TCXO4kfCw9d9xpe9U9JiYHLqo_PMPs4t57F0vNixwHN_y8O0DUj2f1aCrw9AUdCKL8z7nFoQr63sHM0UvtRO-FUydiLrCKi4ObHX-LembSp2TIisaiKnJ8dR51KUTFEQ=s100-no?authuser=0" alt="Facebook" width="30"></a>
+
+                            <a href="#"><img src="https://lh3.googleusercontent.com/-s9PkQ8Pua-qhDQnKVCxz7UsoGkfmeQscELb0cIfva0BJZxUuLNtqryIqIM6dmfHkG17T3BVuuy0yJhTDeIT1AqkOGrAJcZHrIMj_0rQSIktLwfc4U1_aHjC38RSbqt9QIcejV9Nl3hgAIubX9VejVk67rKJhenXSaW-Nsmj9kGD7HBrdp7v1RBcPYPoY04fDc4RlBmRM8P2vNcTdcnplj-ZFahVCfARaPTWQVyPq2Zf5loCH1D030PVg_wwEx0pjkjVJghqhUWvfj_nYzK4OiCCd6Pqaf_2nwV-v_ScMCGmCsNPIcncr6VH5yPc5L3fkflLhtQX_dTWcvLwR49SDEzrHTa2Ly5PqSS2x8Bmva-6nf8WTuSQc6My5QwRlBLXkXZ0daOKnVx2HD4YPgcDTxNemwv2q_r_jLTa59_oOTQ73hz0MF0981oeqF0Ciw1nMgptjdPlVZxyKAvuz8vwYcCwId-yGyDOOkW9CcR7FFd5nmW78kgPDhTIuUUj4c9q-GkRUbQJG3Xx-8sfY08AgOFwZ7cE4jsMva1Lj1leOzEWbr8hIIh_5eIpArTDq23nL8zpR8e3_J_-KbrIvsMfEqvTCtkyUktw3Y-PGGino4fux8A6dRc92Bvgdq0FRoyHRmwInR-afFi09l-iz7hKSslKIuRurR7gyzmU9YhvRFIQweTAKiz0kFlp3bhXSFCvTyo7i470gFkWT1U2DbGM_Q=s100-no?authuser=0" alt="Twitter" width="30"></a>
+
+                            <a href="#"><img src="https://lh3.googleusercontent.com/C6YZW5gA0co-_E9aJes3PtifPiRV0yeo73m-eU3sI3TY1BumOqPesvjsFWFcrbOXdakBgqCQUO9MQDwsnoeacLlIFpsq9E6kmwYcWOwCNqfvASrTH0Ql7ivZbn480yI0E_vf-3RDX3269hatg_pfES2nOnj9gdXzBcC3_FIarRP697H36MYxYKRC3BoheNdc5rOaopEQshdTCoQnya_mgc9K0DkF-7L7eKDtG0oEKP9lBLepJwsbwX8V-P_LzAC0sDqcsSzj80UnZ_ASYC_-pMcjK5WhBekSLp171jPzk9KvSIV02XWL5GR9rOyXfXGBdbf3vp1TWO9trTx-fxxAr0k_MXE4UWIW9kixPKgBAf0Izjy6UUcvreHb-jRm-lYMsNPVPXYfbMr7hUkgPZa4bo6Fj2ygMVz_WaM3jUP6lF6xx6SCdztW72GBdMWbacQVS2KWAj8NVP-KbADAVtL6hTLwhEzVR0UvNn_GYHNHnLH8DQzTCf3Olec7pt40p5qecg9DSJB4UOjE0GpFqRqZB3RhUHlFn8_R85vNnrerN8CTJ7ztQmI_WyR7NS2hLkbzTIqmaeFvxTZh3Gfgeve7TZ6Vjydfsvm651G7K4eY7nd0Wln5oUfIPNHBGsPYh2DaEQYS_xW5ZyDipbBEaGd9NFo5zEAyJigD1pIoQ7Dujlav-qObs6q0s3Y8ljDdjBzT_KuePS6OfalhLJf1YIio_w=s100-no?authuser=0" alt="Instagram" width="30"></a>
+
+                            <a href="#"><img src="https://lh3.googleusercontent.com/HKtbntlLD8gyeOkxo0S4FKBwL1OUzTdnQUxaTyWL-X9VIaZC02vI5A1KKRHgPy6aNadOOwglm8Vfyd-JPEP-kDReUJS-C1EdF0W5PycUiLQhpmeK4O50zjtH_vnNphuNnjWlaYa5x4DHKccN62IA6wPlX22OPZDgt7fYiMinwfuyNka8LfJuCgGj4Oyp8tXM_17_Lq4PFL2lMbH4IwxNyDSosgCXswuZj-3eN35jCE8BpliZyT6TfH84meqRtI6qg-xOAfpMnfTy1vn0YVPLCM2TWWR3CrfUs4vL_zkX47ARSDbakOsAYUR1peJJixl1Dycsw2Lo0hQ3MZLtCmniTM2LlmqPALlHiuBWymD8Mqteob-GzBASp3Kq2s6CCKuaZCaNJJpqkLVv3_on8aBoxAcsOGujD-iuWWfcMD9MDKDKIRsOEgo5u3eKC6z11B7d23W2dZiV_DHOD4T22lRUM-nC8OU4hyiK_JWa-V0H0j-ZNUCn92-7A13S2joOONuBJmEYJAlJVnH3i4pp_wn8ac-marqA3p7y-fYJuo91SexPYxNko-bdsJkJulx89l7ivIHDE3gJMWrODAXLKea3ui_3kYk-_N4Le924XO_-cNFysUsSV8rWVuyx-xFAc1P8PXmUDOKKm6guQKUOPUs7RFiEauTUcrIzXcewxZgSngEkqPdTdsZIfHrZsHtz-xnjCKWspG3rOkVCfHhuCrJiYg=s100-no?authuser=0" alt="Facebook" width="30"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a href="#"><img src="https://lh3.googleusercontent.com/My_YViXlEk0xxuKhw5D0uRi0YTURV9KixowLKTrOyT_dHBtZjObHGzkEI5Kq4bP_a5__QdyGC5Iq9D6ysLTUWygOpctZZiH0QFQRZmNGOaBL4Qo__lPXTTrc19g0vtustkhamnCx6fK3Ggd03oSMivuQUjXW2LSSbBIrWLVKyP5xw0-hNTu5XL1C9aSMLL9VbwFZMXqHnkM4Qs1iEMVWIbrRX9kfa4rRGVxit_0fos-hnOSYaTxAMflUxhuHTpCCMXtdquprRJO76o7kFn1fUdQ-FnIulMfDb0mEJ-0iRC6gVFrDgmtIdM9Cu1VEYtg95j8pSyBnakuGzQyse02PzkCtF-yH6DcMJgTqmKn9rX6WtbAg8lgxNEOZxX69TY5HUxf9D13CbtiTrJ76KdTVHBtw_cjlSF6hQ5C0cS8URN2tacSnjrEXMA9R00KftyWLK0uy8UmpKuLW2kTPMMf1DrHUo1vq7UGeIRKGw6e8xLfWi7P1LgyS75DSrATEnhmadJNUWcU8zdVPDloIV9zJmmvqoVTBhGwySiZx-Od8K2wbkbw-tjk2FCQ2s6Wn0Hd3i5Xufxqx1mlhu0UbsNICTimjAU1svB7Hz32Z_F1juj8eUIfkJ_RU809b7QlqYiDl3uCF3VdHL8wtjc63J0uzLdK5yQkRP8lPdgETFL7nmRBwIxMYhT1NQFjBu772Tg1jmiEsRNRPrpnwDxiEVuPfsqs=w495-h297-no?authuser=0" alt="Banner" width="600" style="max-width: 100%;"></a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="two-columns">
+                            <table class="columns">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <img src="https://lh3.googleusercontent.com/My_YViXlEk0xxuKhw5D0uRi0YTURV9KixowLKTrOyT_dHBtZjObHGzkEI5Kq4bP_a5__QdyGC5Iq9D6ysLTUWygOpctZZiH0QFQRZmNGOaBL4Qo__lPXTTrc19g0vtustkhamnCx6fK3Ggd03oSMivuQUjXW2LSSbBIrWLVKyP5xw0-hNTu5XL1C9aSMLL9VbwFZMXqHnkM4Qs1iEMVWIbrRX9kfa4rRGVxit_0fos-hnOSYaTxAMflUxhuHTpCCMXtdquprRJO76o7kFn1fUdQ-FnIulMfDb0mEJ-0iRC6gVFrDgmtIdM9Cu1VEYtg95j8pSyBnakuGzQyse02PzkCtF-yH6DcMJgTqmKn9rX6WtbAg8lgxNEOZxX69TY5HUxf9D13CbtiTrJ76KdTVHBtw_cjlSF6hQ5C0cS8URN2tacSnjrEXMA9R00KftyWLK0uy8UmpKuLW2kTPMMf1DrHUo1vq7UGeIRKGw6e8xLfWi7P1LgyS75DSrATEnhmadJNUWcU8zdVPDloIV9zJmmvqoVTBhGwySiZx-Od8K2wbkbw-tjk2FCQ2s6Wn0Hd3i5Xufxqx1mlhu0UbsNICTimjAU1svB7Hz32Z_F1juj8eUIfkJ_RU809b7QlqYiDl3uCF3VdHL8wtjc63J0uzLdK5yQkRP8lPdgETFL7nmRBwIxMYhT1NQFjBu772Tg1jmiEsRNRPrpnwDxiEVuPfsqs=w495-h297-no?authuser=0" alt="Hero" width="260" style="max-width: 260px;">
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="columns">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content" style="text-align: left;">
+                                            <tr>
+                                                <td>
+                                                    <p style="font-size: 17px;font-weight: bold;margin: 0;padding-bottom: 10px;">
+                                                        Flat 50% Off
+                                                    </p>
+                                                    <p style="margin: 0;padding-bottom: 15px;font-size: 13px;">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt doloribus nemo at reprehenderit quidem, iste ullam fuga corporis inventore repellat.
+                                                    </p>
+
+                                                    <a href="#" class="btn">Claim Now..</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td style="font-size: 14px;font-weight: 300;background-color: #f2f1f8;color: #073138;padding: 20px 30px;text-align: center;line-height: 20px;">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime natus ducimus obcaecati dolor repudiandae. Laudantium quo labore, eaque fugiat neque ipsa, inventore earum dignissimos dolores voluptates, totam quaerat in magnam?
+                            </p>
+                            <p style="margin-top: 10px;font-weight: 600;">-Jessica Chan</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td style="padding: 10px;text-align: center;">
+                            <a href="#"><img src="https://lh3.googleusercontent.com/s3uWVqbQlhAAuMw_TmqH3lfW0IPR05AJGerk2co77LUKBv_SjVG28XiAP0P533cbq3R0ri9UOQ0g48XhxWLOufqsrpu6ApPCnJkcjKjJwN98Lbz85RrqXMkqCGGEhBtBiJkbDNbQIwctb-Ad3343rfMZPEjHrAJ2j-JmpZiTup7aasC9Z1f9dqmbUKt5tfMmIJX5P2ZCBNIBSj5VdaJb4TfqzIp-MS8mvdS0kmS1mCNWcsu6BA7AilSJNhEgG48oIaXHNIyKByOqyEeNzQMK6v6ozZo0ouBvsOYRnqQ3T1tJwH5YOcZ72LLuUIAMMyZu8v5DM4aYUdkBpcdsbIli8rhx_gWZPH5I37Rhwbz3pltfyb53-shDAoIPhaAZCFavVhYvIUJGjH4IpfInwDg1F4f0294UhmmhQCvldnEeGu4gbQ-3g_bc_HHz3XtpsNLNcVdhz4xQfuxghjG0y8l9URnwXPuBIHfvSqqhlOx4GgFIw1mMANXwqS1dH7ysu9GuMOhp5r1k1ZT-Ob7aSxQi4h0CD7ZCD4hlv6hpz0A-lhIKmRtx68fvoVozqBHlBGF_K_-l_-t3cbQN8pLsCHDkBy9pyfgcqRAQSLq2eOv3EW2CLgS1DtLuMQaRD7Yp5NEt5IpJ_xieZ1NmfgP2wK6dheiKkF_ZTggirId_2KRpgKVdYqU2PStKWAdK9SiMTEisoiKJy6Pq2spzVSfiCwOn5Js=w300-h100-no?authuser=0" alt="Logo" width="170" height="70"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;text-align: center;font-size: 14px;font-weight: 400;line-height: 25px;color: #f6f5fe;">
+                            <p>HTML Email Template By <br>Shagor</p>
+
+                            <p>124 Road, Jashore, Bangladesh</p>
+
+                            <p><a href="mailto:msh43320@gmail.com">test@gmail.com</a></p>
+
+                            <p><a href="tel:+8801742677273">+880-17426-77273</a></p>
+
+                            <p><a href="#" style="font-size: 15px;">UNSUBSCRIBE</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+  </center>
+
+</body>
+</html>
